@@ -23,10 +23,10 @@ router.delete('/', (req, res) => {
 
 router.post('/', (req, res) => {
     if (!req.body.city){
-        req.body.city = 'Happytown'
+        req.body.city = 'DownTown'
     }
     if (!req.body.state){
-        req.body.state = 'BD'
+        req.body.state = 'NV'
     }
     places.push(req.body)
     res.redirect('/places')
